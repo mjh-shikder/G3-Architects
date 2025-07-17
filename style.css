@@ -131,6 +131,55 @@ main>section {
     font-weight: 500;
 }
 
+/* Features */
+
+.features{
+    gap: 140px;
+
+}
+
+
+
+#feature-section-title{
+   border-left: 5px solid #5c6cff; 
+   padding-left: 25px;
+   border-radius: 10px;
+}
+
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+.feature-card{
+    padding: 30px;
+    box-shadow: 0px 0px 10px 1px rgb(219, 219, 219);
+    margin-bottom: 20px;
+    border-radius: 9px;
+}
+
+#feature-img-cont img{
+    max-width: 708px;
+    border-radius: 9px;
+}
+
+#experince-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+
+}
+
+#experince-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+
 /* Some Facts */
 .facts-container {
     display: grid;
@@ -167,6 +216,23 @@ main>section {
 
 
 
+/* Our Sponsors */
+
+.sponsor-info{
+    max-width: 540px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.sponsor-logo{
+    display: grid;
+    grid-template-columns: repeat(5 , 1fr);
+}
+
+.sponsor-logo > img {
+    filter: grayscale(100%);
+}
+
 
 
 
@@ -182,7 +248,8 @@ main>section {
     }
 
     .team-img-container,
-    .facts-container {
+    .facts-container,
+    .sponsor-logo {
         grid-template-columns: repeat(1, 1fr);
     }
 
@@ -197,7 +264,14 @@ main>section {
         gap: 24px;
     }
 
+    .sponsor-logo{
+        justify-items: center;
+        gap: 35px;
+    }
 }
+
+
+
 
 /* Medium Size Device */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -211,6 +285,27 @@ main>section {
         margin: 30px auto;
     }
 
+    .some-facts {
+        text-align: center;
+                
+    }
 
+    .some-facts p {
+        text-align: center;
+        max-width: 90%;
+        
+    }
+
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+        justify-items: center;
+    }
+
+    .sponsor-logo {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+        justify-items: center;
+    }
 
 }
