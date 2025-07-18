@@ -187,10 +187,10 @@ main>section {
 }
 
 .fact-card {
-    border: 1px solid #5c6cff;
+    border: 5px solid #5c6cff;
     width: 240px;
     height: 240px;
-    border-radius: 8px;
+    border-radius: 9px;
     text-align: center;
     align-items: center;
     justify-content: center;
